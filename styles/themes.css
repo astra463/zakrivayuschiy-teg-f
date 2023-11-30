@@ -83,7 +83,7 @@
   border: 2px solid var(--accent-color);
 }
 
-.theme-dark .save-button svg {
+.theme-light .save-button svg {
   color: var(--bg-color);
 }
 
