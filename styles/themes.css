@@ -13,15 +13,29 @@
   --bg-color: #fff;
   --accent-color: #000;
   --button-text-color: #fff;
+  --heart-contour-color: #000;
+  --bg-image: repeating-linear-gradient(
+    to right,
+    #d3d3d3 0,
+    #d3d3d3 2px,
+    transparent 2px,
+    transparent 4px
+  ),
+  repeating-linear-gradient(
+    to bottom,
+    #d3d3d3 0,
+    #d3d3d3 2px,
+    transparent 2px,
+    transparent 4px
+  ),
+  linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
 }
 
 .theme-light .page {
   color: var(--bg-color);
   background-color: var(--bg-color);
-  background-image: var(--bg-image);
   font-variation-settings: "wght" var(--main-font-weight);
   font-family: var(--main-font);
-
 }
 
 .theme-light .header {
@@ -127,6 +141,10 @@
   font-weight: var(--main-font-weight);
 }
 
+.theme-light .save-button:focus-visible {
+  box-shadow: 2px 2px 0 0 var(--accent-color);
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     --title-font-weight: 700;
@@ -134,15 +152,29 @@
     --bg-color: #fff;
     --accent-color: #000;
     --button-text-color: #fff;
+    --heart-contour-color: #000;
+    --bg-image: repeating-linear-gradient(
+      to right,
+      #d3d3d3 0,
+      #d3d3d3 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    repeating-linear-gradient(
+      to bottom,
+      #d3d3d3 0,
+      #d3d3d3 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
   }
 
   .page {
     color: var(--bg-color);
     background-color: var(--bg-color);
-    background-image: var(--bg-image);
     font-variation-settings: "wght" var(--main-font-weight);
     font-family: var(--main-font);
-
   }
 
   .header {
@@ -197,7 +229,11 @@
   }
 
   .card__icon-button:focus-visible {
-    outline: 2px solid var(--accent-color);
+    outline: 2px solid transparent;
+  }
+
+  .card__icon-button {
+    outline: 2px solid transparent;
   }
 
   .card__like-button {
@@ -247,6 +283,10 @@
     font-family: var(--accent-font);
     font-weight: var(--main-font-weight);
   }
+
+  .theme-light .save-button:focus-visible {
+    box-shadow: 2px 2px 0 0 var(--accent-color);
+  }
 }
 
 /* Dark-theme styles*/
@@ -257,14 +297,28 @@
   --bg-color: #000;
   --accent-color: #00cc14;
   --button-text-color: #00cc14;
+  --heart-contour-color: #00cc14;
+  --bg-image: repeating-linear-gradient(
+    to right,
+    #000 0,
+    #000 2px,
+    transparent 2px,
+    transparent 4px
+  ),
+  repeating-linear-gradient(
+    to bottom,
+    #000 0,
+    #000 2px,
+    transparent 2px,
+    transparent 4px
+  ),
+  linear-gradient(to bottom, #007f0c, #004306);
 }
 
 .theme-dark .page {
   color: var(--bg-color);
   background-color: var(--bg-color);
-  background-image: var(--bg-image);
   font-family: var(--main-font);
-
 }
 
 .theme-dark .header {
@@ -355,6 +409,10 @@
   color: var(--accent-color);
 }
 
+.card__icon-button:focus-visible {
+  outline: 2px solid var(--accent-color);
+}
+
 .theme-dark .save-button svg {
   color: var(--accent-color);
 }
@@ -370,6 +428,10 @@
   font-weight: var(--main-font-weight);
 }
 
+.theme-dark .save-button:focus-visible {
+  box-shadow: 2px 2px 0 0 var(--accent-color);
+}
+
 @media (prefers-color-scheme: dark) {
 
   :root {
@@ -378,12 +440,12 @@
     --bg-color: #000;
     --accent-color: #00cc14;
     --button-text-color: #00cc14;
+    --heart-contour-color: #00cc14;
   }
   
   .page {
     color: var(--bg-color);
     background-color: var(--bg-color);
-    background-image: var(--bg-image);
     font-family: var(--main-font);
   }
   
@@ -444,7 +506,7 @@
   }
   
   .card__icon-button:focus-visible {
-    outline: 2px solid var(--accent-color);
+    outline: 2px solid transparent;
   }
   
   .card__like-button {
@@ -471,6 +533,10 @@
     background-color: var(--bg-color);
   }
   
+  .card__icon-button:focus-visible {
+    outline: 2px solid var(--accent-color);
+  }
+
   .dialog-container svg {
     color: var(--accent-color);
   }
@@ -488,6 +554,10 @@
     color: var(--accent-color);
     font-family: var(--accent-font);
     font-weight: var(--main-font-weight);
+  }
+
+  .theme-dark .save-button:focus-visible {
+    box-shadow: 2px 2px 0 0 var(--accent-color);
   }
 }
 

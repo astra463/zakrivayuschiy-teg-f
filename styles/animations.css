@@ -13,6 +13,77 @@
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 */
 
+.like-icon .core {
+  fill: transparent;
+  transition: fill 0.03s ease;
+}
+
+.like-icon:hover .core {
+  fill: var(--heart-contour-color);
+  transition: fill 0.3s ease;
+}
+
+.like-icon .main-body {
+  fill: transparent;
+  transition: fill 0.3s ease;
+}
+
+.like-icon:hover .main-body {
+  fill: var(--heart-contour-color);
+  transition: fill 0.3s 0.05s ease;
+}
+
+.like-icon:active .core {
+  fill: var(--heart-liked-color);
+  transition: fill 0.3s ease;
+}
+
+.like-icon:active .main-body {
+  fill: var(--heart-liked-color);
+  transition: fill 0.3s 0.05s ease;
+}
+
+.like-icon.is-liked .core {
+  fill: var(--heart-liked-color);
+  transition: fill 0.3s ease;
+}
+
+.like-icon.is-liked .main-body {
+  fill: var(--heart-liked-color);
+  transition: fill 0.3s ease;
+}
+
+.like-icon.is-liked .contour {
+  fill: var(--heart-liked-color);
+  transition: fill 0.3s 0.06s ease;
+}
+
+.like-icon.is-liked .heart {
+  animation: like-animation 0.3s 0.1s 1 ease-in;
+}
+
+.like-icon.is-liked .sparks {
+  animation: sparks-animation 0.3s 0.3s 1 ease-in;
+}
+
+.card__like-button:focus {
+  transition: box-shadow 0.3s ease;
+}
+
+.card__icon-button:focus-visible {
+  outline: 2px solid var(--acent-color);
+  transition: outline 0.3s ease;
+}
+
+.card__icon-button {
+  outline: 2px solid transparent;
+  transition: outline 0.3s ease;
+}
+
+.save-button:focus-visible {
+  transition: box-shadow 0.3s ease;
+}
+
 @keyframes current_theme_arrow {
   0% {
     left: -16px;

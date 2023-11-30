@@ -21,6 +21,8 @@
   background-size: cover;
   min-inline-size: 320px;
   min-block-size: 100dvb;
+  background-image: var(--bg-image);
+  background-attachment: fixed;
 }
 
 .header {
@@ -32,12 +34,10 @@
   margin-block-start: 102px;
   margin-block-end: 100px;
   padding-block-start: clamp(7.5rem, 7.148rem + 1.502vw, 8.5rem);
-  block-size: clamp(20.438rem, 19.635rem + 3.461vw, 22.75rem);
 }
 
 .header__title {
   font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
-
 }
 
 .header__description {
@@ -53,13 +53,13 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  gap: 14px;
+  gap: 7px;
+  padding-block-end: 25px;
 }
 
 .theme-menu__item {
   position: relative;
   align-self: center;
-  max-block-size: 14px;
   inline-size: 84px;
 }
 
@@ -68,8 +68,10 @@
   color: var(--accent-color);
   font-family: var(--accent-font);
   font-size: 14px;
+  max-block-size: 14px;
   text-transform: uppercase;
   background-color: transparent;
+  cursor: pointer;
 }
 
 .theme-menu__button:hover {
@@ -85,7 +87,6 @@
   content: "▶";
   position: absolute;
   left: -16px;
-  opacity: 0.6;
   font-size: 14px;
   animation: current_theme_arrow 0.5s infinite ease-in-out alternate;
   pointer-events: none;
@@ -182,6 +183,7 @@
   border: none;
   padding: 0;
   background-color: transparent;
+  cursor: pointer;
 }
 
 .card__icon-button:focus-visible {
@@ -198,6 +200,11 @@
   padding: 7px 17px;
   background-color: transparent;
   inline-size: 130px;
+  cursor: pointer;
+}
+
+.card__like-button:focus {
+  outline: none;
 }
 
 .like-icon {
@@ -206,69 +213,12 @@
   align-items: center;
 }
 
-.like-icon .core {
-  fill: transparent;
-  transition: fill 0.03s ease;
-}
-
-.like-icon:hover .core {
-  fill: var(--heart-contour-color);
-  transition: fill 0.3s ease;
-}
-
-.like-icon .main-body {
-  fill: transparent;
-  transition: fill 0.3s ease;
-}
-
-.like-icon:hover .main-body {
-  fill: var(--heart-contour-color);
-  transition: fill 0.3s 0.05s ease;
-}
-
-.like-icon:active .core {
-  fill: var(--heart-liked-color);
-  transition: fill 0.3s ease;
-}
-
-.like-icon:active .main-body {
-  fill: var(--heart-liked-color);
-  transition: fill 0.3s 0.05s ease;
-}
-
-.like-icon.is-liked .core {
-  fill: var(--heart-liked-color);
-  transition: fill 0.3s ease;
-}
-
-.like-icon.is-liked .main-body {
-  fill: var(--heart-liked-color);
-  transition: fill 0.3s ease;
-}
-
-.like-icon.is-liked .contour {
-  fill: var(--heart-liked-color);
-  transition: fill 0.3s 0.06s ease;
-}
-
 .heart {
   transform-origin: center;
 }
 
-.like-icon.is-liked .heart {
-  animation: like-animation 0.3s 0.1s 1 ease-in;
-}
-
 .sparks {
   opacity: 0;
-}
-
-.like-icon.is-liked .sparks {
-  animation: sparks-animation 0.3s 0.3s 1 ease-in;
-}
-
-.card__like-button:focus {
-  transition: box-shadow 0.3s ease;
 }
 
 .card__like-button::after,
@@ -309,7 +259,15 @@
   align-items: center;
   gap: 8px;
   padding: 18px;
-  inline-size: clamp(19.125rem, 18.496rem + 2.713vw, 20.938rem);
+  cursor: pointer;
+}
+
+.save-button:focus {
+  outline: none;
+}
+
+.save-button:focus-visible {
+  outline: none;
 }
 
 .save-icon {
@@ -319,7 +277,6 @@
 .save-button svg {
   position: relative;
   z-index: 1;
-  width: 21px;
   min-width: 21px;
   mix-blend-mode: difference;
 }
@@ -359,6 +316,7 @@
   justify-content: center;
   inline-size: clamp(16.063rem, 15.282rem + 3.368vw, 18.313rem);
   max-block-size: 38px;
+  cursor: pointer;
 }
 
 @media (width <= 375px) {
@@ -376,6 +334,9 @@
   }
   .card-label {
     right: 11px;
+  }
+  .save-icon {
+    width: 21px;
   }
 }
 
