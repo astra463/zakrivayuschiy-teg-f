@@ -20,6 +20,7 @@
   font-family: var(--main-font);
   background-color: var(--bg-color);
   color: var(--bg-color);
+  font-variation-settings: "wght" var(--main-font-weight);
   background-image: var(--bg-image);
   background-size: cover;
   display: flex;
