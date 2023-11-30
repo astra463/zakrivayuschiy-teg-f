@@ -17,11 +17,6 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
-  font-family: var(--main-font);
-  background-color: var(--bg-color);
-  color: var(--bg-color);
-  font-variation-settings: "wght" var(--main-font-weight);
-  background-image: var(--bg-image);
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -32,8 +27,6 @@
   position: relative;
   margin-block-start: 102px;
   margin-block-end: 104px;
-  background-color: var(--bg-color);
-  border: 2px solid var(--accent-color);
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -44,16 +37,11 @@
 
 .header__title {
   font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
-  color: var(--accent-color);
-  font-family: var(--accent-font);
-  font-weight: var(--title-font-weight);
+
 }
 
 .header__description {
   font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
-  color: var(--themes-main-color, #000);
-  font-family: var(--accent-font);
-  font-weight: var(--main-font-weight);
   text-transform: uppercase;
 }
 
@@ -97,7 +85,6 @@
   position: absolute;
   content: "▶";
   left: -16px;
-  color: var(--accent-color);
   pointer-events: none;
   font-size: 14px;
   opacity: 0.6;
@@ -129,7 +116,6 @@
   transform: scaleX(0);
   height: 2px;
   margin-top: 3px;
-  background-color: var(--accent-color);
   transition: transform 0.3s ease;
   opacity: 0.6;
 }
@@ -145,11 +131,6 @@
   gap: 50px;
 }
 
-.card {
-  border: 2px solid var(--accent-color);
-  background-color: var(--bg-color);
-}
-
 .card-picture-container {
   position: relative;
   margin: 0;
@@ -161,17 +142,12 @@
   display: block;
   width: 100%;
   object-fit: cover;
-  border-top: 2px solid var(--accent-color);
-  border-bottom: 2px solid var(--accent-color);
 }
 
 .card-label {
   position: absolute;
-  color: var(--accent-color);
-  text-shadow: 0 0 1px var(--label-contour-color);
   right: 23px;
   top: 29px;
-  font-family: var(--accent-font);
   font-size: 14px;
   opacity: 0.5;
   mix-blend-mode: hard-light;
@@ -188,14 +164,10 @@
 .card-title {
   font-size: 18px;
   padding: 2px 10px;
-  color: var(--accent-color);
 }
 
 .card-description {
-  color: var(--accent-color);
-  font-family: var(--main-font);
   font-size: 18px;
-  font-weight: var(--main-font-weight);
 }
 
 .card-description-container {
@@ -222,7 +194,6 @@
 }
 
 .card__icon-button:focus-visible {
-  outline: 2px solid var(--accent-color);
   outline-offset: -2px;
   transition: outline 0.3s ease;
 }
@@ -234,7 +205,6 @@
 .card__like-button {
   position: relative;
   background-color: transparent;
-  border: 2px solid var(--accent-color);
   padding: 7px 17px;
   inline-size: 130px;
 }
@@ -325,7 +295,6 @@
 }
 
 .card__like-button:focus {
-  box-shadow: 2px 2px 0 0 var(--accent-color);
   transition: box-shadow 0.3s ease;
 }
 
@@ -336,7 +305,6 @@
   left: 0;
   top: 0;
   display: block;
-  background-color: var(--accent-color);
   width: 100%;
   height: 100%;
   transform: scaleX(0);
@@ -353,9 +321,7 @@
 .button__text {
   position: relative;
   z-index: 1;
-  color: var(--button-text-color);
   font-size: 14px;
-  font-family: var(--accent-font);
   text-wrap: nowrap;
   mix-blend-mode: difference;
 }
@@ -367,13 +333,10 @@
 .save-button {
   position: relative;
   display: flex;
-  background-color: var(--bg-color);
-  border: 2px solid var(--accent-color);
   inline-size: clamp(19.125rem, 18.496rem + 2.713vw, 20.938rem);
   gap: 8px;
   padding: 18px;
   align-items: center;
-  color: var(--bg-color);
 }
 
 .save-icon {
@@ -389,10 +352,8 @@
 }
 
 .dialog[open] {
-  background-color: var(--bg-color);
   inline-size: clamp(21.313rem, 20.965rem + 1.497vw, 22.313rem);
   padding: 32px;
-  border: 2px solid var(--accent-color);
 }
 
 .dialog::backdrop {
@@ -415,9 +376,6 @@
 }
 
 .dialog-text {
-  color: var(--accent-color);
-  font-family: var(--accent-font);
-  font-weight: var(--main-font-weight);
   line-height: 1.5;
   text-transform: uppercase;
   font-size: 14px;
