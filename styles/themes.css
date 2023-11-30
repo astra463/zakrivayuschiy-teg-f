@@ -204,7 +204,7 @@
     border: 2px solid var(--accent-color);
   }
 
-  .theme-dark .save-button svg {
+  .save-button svg {
     color: var(--bg-color);
   }
 
