@@ -20,10 +20,8 @@
   background-color: var(--bg-color);
   background-image: var(--bg-image);
   font-variation-settings: "wght" var(--main-font-weight);
-}
-
-.theme-light .page {
   font-family: var(--main-font);
+
 }
 
 .theme-light .header {
@@ -143,10 +141,8 @@
     background-color: var(--bg-color);
     background-image: var(--bg-image);
     font-variation-settings: "wght" var(--main-font-weight);
-  }
-
-  .page {
     font-family: var(--main-font);
+
   }
 
   .header {
@@ -267,10 +263,8 @@
   color: var(--bg-color);
   background-color: var(--bg-color);
   background-image: var(--bg-image);
-}
-
-.theme-dark .page {
   font-family: var(--main-font);
+
 }
 
 .theme-dark .header {
@@ -378,7 +372,7 @@
 
 @media (prefers-color-scheme: dark) {
 
-  :root{
+  :root {
     --title-font-weight: 785;
     --main-font-weight: 465;
     --bg-color: #000;
@@ -390,9 +384,6 @@
     color: var(--bg-color);
     background-color: var(--bg-color);
     background-image: var(--bg-image);
-  }
-  
-  .page {
     font-family: var(--main-font);
   }
   
