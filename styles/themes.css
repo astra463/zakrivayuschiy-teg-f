@@ -16,25 +16,19 @@
 }
 
 .theme-light .page {
-  background-color: var(--bg-color);
   color: var(--bg-color);
-  font-variation-settings: "wght" var(--main-font-weight);
+  background-color: var(--bg-color);
   background-image: var(--bg-image);
+  font-variation-settings: "wght" var(--main-font-weight);
 }
 
 .theme-light .page {
   font-family: var(--main-font);
 }
 
-@supports (font-variation-settings: normal) {
-  .theme-light .page {
-    font-family: var(--main-font);
-  }
-}
-
 .theme-light .header {
-  background-color: var(--bg-color);
   border: 2px solid var(--accent-color);
+  background-color: var(--bg-color);
 }
 
 .theme-light .header__title {
@@ -74,8 +68,8 @@
 
 .theme-light .card-label {
   color: var(--accent-color);
-  text-shadow: 0 0 1px var(--label-contour-color);
   font-family: var(--accent-font);
+  text-shadow: 0 0 1px var(--label-contour-color);
 }
 
 .theme-light .card-description {
@@ -110,9 +104,9 @@
 }
 
 .theme-light .save-button {
-  background-color: var(--bg-color);
   border: 2px solid var(--accent-color);
   color: var(--bg-color);
+  background-color: var(--bg-color);
 }
 
 .theme-light .dialog-container svg {
@@ -125,8 +119,8 @@
 }
 
 .theme-light .dialog[open] {
-  background-color: var(--bg-color);
   border: 2px solid var(--accent-color);
+  background-color: var(--bg-color);
 }
 
 .theme-light .dialog-text {
@@ -145,25 +139,19 @@
   }
 
   .page {
-    background-color: var(--bg-color);
     color: var(--bg-color);
-    font-variation-settings: "wght" var(--main-font-weight);
+    background-color: var(--bg-color);
     background-image: var(--bg-image);
+    font-variation-settings: "wght" var(--main-font-weight);
   }
 
   .page {
     font-family: var(--main-font);
   }
 
-  @supports (font-variation-settings: normal) {
-    .page {
-      font-family: var(--main-font);
-    }
-  }
-
   .header {
-    background-color: var(--bg-color);
     border: 2px solid var(--accent-color);
+    background-color: var(--bg-color);
   }
 
   .header__title {
@@ -203,8 +191,8 @@
 
   .card-label {
     color: var(--accent-color);
-    text-shadow: 0 0 1px var(--label-contour-color);
     font-family: var(--accent-font);
+    text-shadow: 0 0 1px var(--label-contour-color);
   }
 
   .card-description {
@@ -239,9 +227,9 @@
   }
 
   .save-button {
-    background-color: var(--bg-color);
     border: 2px solid var(--accent-color);
     color: var(--bg-color);
+    background-color: var(--bg-color);
   }
 
   .dialog-container svg {
@@ -254,8 +242,8 @@
   }
 
   .dialog[open] {
-    background-color: var(--bg-color);
     border: 2px solid var(--accent-color);
+    background-color: var(--bg-color);
   }
 
   .dialog-text {
@@ -276,8 +264,8 @@
 }
 
 .theme-dark .page {
-  background-color: var(--bg-color);
   color: var(--bg-color);
+  background-color: var(--bg-color);
   background-image: var(--bg-image);
 }
 
@@ -285,15 +273,9 @@
   font-family: var(--main-font);
 }
 
-@supports (font-variation-settings: normal) {
-  .theme-dark .page {
-    font-family: var(--main-font);
-  }
-}
-
 .theme-dark .header {
-  background-color: var(--bg-color);
   border: 2px solid var(--accent-color);
+  background-color: var(--bg-color);
 }
 
 .theme-dark .header__title {
@@ -338,8 +320,8 @@
 
 .theme-dark .card-label {
   color: var(--accent-color);
-  text-shadow: 0 0 1px var(--label-contour-color);
   font-family: var(--accent-font);
+  text-shadow: 0 0 1px var(--label-contour-color);
 }
 
 .theme-dark .card-description {
@@ -370,9 +352,9 @@
 }
 
 .theme-dark .save-button {
-  background-color: var(--bg-color);
   border: 2px solid var(--accent-color);
   color: var(--bg-color);
+  background-color: var(--bg-color);
 }
 
 .theme-dark .dialog-container svg {
@@ -384,8 +366,8 @@
 }
 
 .theme-dark .dialog[open] {
-  background-color: var(--bg-color);
   border: 2px solid var(--accent-color);
+  background-color: var(--bg-color);
 }
 
 .theme-dark .dialog-text {
@@ -395,6 +377,7 @@
 }
 
 @media (prefers-color-scheme: dark) {
+
   :root{
     --title-font-weight: 785;
     --main-font-weight: 465;
@@ -404,8 +387,8 @@
   }
   
   .page {
-    background-color: var(--bg-color);
     color: var(--bg-color);
+    background-color: var(--bg-color);
     background-image: var(--bg-image);
   }
   
@@ -413,15 +396,9 @@
     font-family: var(--main-font);
   }
   
-  @supports (font-variation-settings: normal) {
-    .page {
-      font-family: var(--main-font);
-    }
-  }
-  
   .header {
-    background-color: var(--bg-color);
     border: 2px solid var(--accent-color);
+    background-color: var(--bg-color);
   }
   
   .header__title {
@@ -466,8 +443,8 @@
   
   .card-label {
     color: var(--accent-color);
-    text-shadow: 0 0 1px var(--label-contour-color);
     font-family: var(--accent-font);
+    text-shadow: 0 0 1px var(--label-contour-color);
   }
   
   .card-description {
@@ -498,9 +475,9 @@
   }
   
   .save-button {
-    background-color: var(--bg-color);
     border: 2px solid var(--accent-color);
     color: var(--bg-color);
+    background-color: var(--bg-color);
   }
   
   .dialog-container svg {
@@ -512,8 +489,8 @@
   }
   
   .dialog[open] {
-    background-color: var(--bg-color);
     border: 2px solid var(--accent-color);
+    background-color: var(--bg-color);
   }
   
   .dialog-text {
