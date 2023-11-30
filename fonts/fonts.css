@@ -9,6 +9,7 @@
 @font-face {
   font-display: swap;
   font-family: "Inter-Variable";
-  src: local("Inter-Variable.woff2"), url("./Inter-Variable.woff2") format("woff2");
+  src: local("Inter-Variable.woff2"),
+    url("./Inter-Variable.woff2") format("woff2");
   font-weight: 400 785;
 }
