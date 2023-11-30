@@ -15,6 +15,22 @@
   --button-text-color: #00cc14;
 }
 
+.page .theme-dark {
+  color: var(--accent-color);
+}
+
+.theme-dark .save-button svg {
+  color: var(--accent-color);
+}
+
+.theme-dark .dialog-container svg {
+  color: var(--accent-color);
+}
+
+.theme-light .dialog-container svg {
+  color: var(--bg-color);
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --title-font-weight: 785;
