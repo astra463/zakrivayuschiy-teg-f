@@ -15,27 +15,27 @@
   --button-text-color: #fff;
   --heart-contour-color: #000;
   --bg-image: repeating-linear-gradient(
-    to right,
-    #d3d3d3 0,
-    #d3d3d3 2px,
-    transparent 2px,
-    transparent 4px
-  ),
-  repeating-linear-gradient(
-    to bottom,
-    #d3d3d3 0,
-    #d3d3d3 2px,
-    transparent 2px,
-    transparent 4px
-  ),
-  linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
+      to right,
+      #d3d3d3 0,
+      #d3d3d3 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    repeating-linear-gradient(
+      to bottom,
+      #d3d3d3 0,
+      #d3d3d3 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
 }
 
 .theme-light .page {
   color: var(--bg-color);
+  font-family: var(--main-font);
   background-color: var(--bg-color);
   font-variation-settings: "wght" var(--main-font-weight);
-  font-family: var(--main-font);
 }
 
 .theme-light .header {
@@ -154,27 +154,27 @@
     --button-text-color: #fff;
     --heart-contour-color: #000;
     --bg-image: repeating-linear-gradient(
-      to right,
-      #d3d3d3 0,
-      #d3d3d3 2px,
-      transparent 2px,
-      transparent 4px
-    ),
-    repeating-linear-gradient(
-      to bottom,
-      #d3d3d3 0,
-      #d3d3d3 2px,
-      transparent 2px,
-      transparent 4px
-    ),
-    linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
+        to right,
+        #d3d3d3 0,
+        #d3d3d3 2px,
+        transparent 2px,
+        transparent 4px
+      ),
+      repeating-linear-gradient(
+        to bottom,
+        #d3d3d3 0,
+        #d3d3d3 2px,
+        transparent 2px,
+        transparent 4px
+      ),
+      linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
   }
 
   .page {
     color: var(--bg-color);
+    font-family: var(--main-font);
     background-color: var(--bg-color);
     font-variation-settings: "wght" var(--main-font-weight);
-    font-family: var(--main-font);
   }
 
   .header {
@@ -299,26 +299,26 @@
   --button-text-color: #00cc14;
   --heart-contour-color: #00cc14;
   --bg-image: repeating-linear-gradient(
-    to right,
-    #000 0,
-    #000 2px,
-    transparent 2px,
-    transparent 4px
-  ),
-  repeating-linear-gradient(
-    to bottom,
-    #000 0,
-    #000 2px,
-    transparent 2px,
-    transparent 4px
-  ),
-  linear-gradient(to bottom, #007f0c, #004306);
+      to right,
+      #000 0,
+      #000 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    repeating-linear-gradient(
+      to bottom,
+      #000 0,
+      #000 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    linear-gradient(to bottom, #007f0c, #004306);
 }
 
 .theme-dark .page {
   color: var(--bg-color);
-  background-color: var(--bg-color);
   font-family: var(--main-font);
+  background-color: var(--bg-color);
 }
 
 .theme-dark .header {
@@ -433,7 +433,6 @@
 }
 
 @media (prefers-color-scheme: dark) {
-
   :root {
     --title-font-weight: 785;
     --main-font-weight: 465;
@@ -441,98 +440,113 @@
     --accent-color: #00cc14;
     --button-text-color: #00cc14;
     --heart-contour-color: #00cc14;
+    --bg-image: repeating-linear-gradient(
+        to right,
+        #000 0,
+        #000 2px,
+        transparent 2px,
+        transparent 4px
+      ),
+      repeating-linear-gradient(
+        to bottom,
+        #000 0,
+        #000 2px,
+        transparent 2px,
+        transparent 4px
+      ),
+      linear-gradient(to bottom, #007f0c, #004306);
   }
-  
+
   .page {
     color: var(--bg-color);
-    background-color: var(--bg-color);
     font-family: var(--main-font);
+    background-color: var(--bg-color);
   }
-  
+
   .header {
     border: 2px solid var(--accent-color);
     background-color: var(--bg-color);
   }
-  
+
   .header__title {
     color: var(--accent-color);
     font-family: var(--accent-font);
     font-weight: var(--title-font-weight);
   }
-  
+
   .header__description {
     color: var(--accent-color);
     font-family: var(--accent-font);
     font-weight: var(--main-font-weight);
   }
-  
+
   .theme-menu__button {
     color: var(--accent-color);
     font-family: var(--accent-font);
   }
-  
+
   .theme-menu__button:disabled::before {
     color: var(--accent-color);
   }
-  
+
   .theme-menu__button::after {
     background-color: var(--accent-color);
   }
-  
+
   .card {
     border: 2px solid var(--accent-color);
     background-color: var(--bg-color);
   }
-  
+
   .card-title {
     color: var(--accent-color);
     font-variation-settings: "wght" var(--title-font-weight);
   }
-  
+
   .card-picture-container {
     border-top: 2px solid var(--accent-color);
     border-bottom: 2px solid var(--accent-color);
   }
-  
+
   .card-label {
     color: var(--accent-color);
     font-family: var(--accent-font);
     text-shadow: 0 0 1px var(--label-contour-color);
   }
-  
+
   .card-description {
     color: var(--accent-color);
     font-weight: var(--main-font-weight);
   }
-  
+
   .card__icon-button:focus-visible {
     outline: 2px solid transparent;
   }
-  
+
   .card__like-button {
     border: 2px solid var(--accent-color);
   }
-  
+
   .card__like-button:focus {
     box-shadow: 2px 2px 0 0 var(--accent-color);
   }
-  
+
   .card__like-button::after,
   .save-button::after {
     background-color: var(--accent-color);
   }
-  
+
   .button__text {
     color: var(--button-text-color);
     font-family: var(--accent-font);
   }
-  
+
   .save-button {
     border: 2px solid var(--accent-color);
     color: var(--bg-color);
     background-color: var(--bg-color);
   }
-  
+
   .card__icon-button:focus-visible {
     outline: 2px solid var(--accent-color);
   }
@@ -540,16 +554,16 @@
   .dialog-container svg {
     color: var(--accent-color);
   }
-  
+
   .save-button svg {
     color: var(--accent-color);
   }
-  
+
   .dialog[open] {
     border: 2px solid var(--accent-color);
     background-color: var(--bg-color);
   }
-  
+
   .dialog-text {
     color: var(--accent-color);
     font-family: var(--accent-font);
@@ -560,5 +574,3 @@
     box-shadow: 2px 2px 0 0 var(--accent-color);
   }
 }
-
-
