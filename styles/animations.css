@@ -71,12 +71,10 @@
 }
 
 .card__icon-button:focus-visible {
-  outline: 2px solid var(--acent-color);
-  transition: outline 0.3s ease;
+  outline: 2px solid var(--focus-visible-outline-color);
 }
 
 .card__icon-button {
-  outline: 2px solid transparent;
   transition: outline 0.3s ease;
 }
 
