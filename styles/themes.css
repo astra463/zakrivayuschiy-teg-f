@@ -14,21 +14,9 @@
   --accent-color: #000;
   --button-text-color: #fff;
   --heart-contour-color: #000;
-  --bg-image: repeating-linear-gradient(
-      to right,
-      #d3d3d3 0,
-      #d3d3d3 2px,
-      rgba(255, 255, 255, 0) 2px,
-      rgba(255, 255, 255, 0) 4px
-    ),
-    repeating-linear-gradient(
-      to bottom,
-      #d3d3d3 0,
-      #d3d3d3 2px,
-      rgba(255, 255, 255, 0) 2px,
-      rgba(255, 255, 255, 0) 4px
-    ),
-    linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
+  --bg-one: #d3d3d3;
+  --bg-two: #e7e7e7;
+  --bg-three: #1a1a1a;
 }
 
 .theme-light .dialog-container svg {
@@ -43,21 +31,9 @@
     --accent-color: #000;
     --button-text-color: #fff;
     --heart-contour-color: #000;
-    --bg-image: repeating-linear-gradient(
-        to right,
-        #d3d3d3 0,
-        #d3d3d3 2px,
-        rgba(255, 255, 255, 0) 2px,
-        rgba(255, 255, 255, 0) 4px
-      ),
-      repeating-linear-gradient(
-        to bottom,
-        #d3d3d3 0,
-        #d3d3d3 2px,
-        rgba(255, 255, 255, 0) 2px,
-        rgba(255, 255, 255, 0) 4px
-      ),
-      linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
+    --bg-one: #d3d3d3;
+    --bg-two: #e7e7e7;
+    --bg-three: #1a1a1a;
   }
 
   .dialog-container svg {
@@ -74,21 +50,9 @@
   --accent-color: #00cc14;
   --button-text-color: #00cc14;
   --heart-contour-color: #00cc14;
-  --bg-image: repeating-linear-gradient(
-      to right,
-      #000 0,
-      #000 2px,
-      rgba(255, 255, 255, 0) 2px,
-      rgba(255, 255, 255, 0) 4px
-    ),
-    repeating-linear-gradient(
-      to bottom,
-      #000 0,
-      #000 2px,
-      rgba(255, 255, 255, 0) 2px,
-      rgba(255, 255, 255, 0) 4px
-    ),
-    linear-gradient(to bottom, #007f0c, #004306);
+  --bg-one: #000;
+  --bg-two: #007f0c;
+  --bg-three: #004306;
 }
 
 .theme-dark .dialog-container svg {
@@ -103,21 +67,9 @@
     --accent-color: #00cc14;
     --button-text-color: #00cc14;
     --heart-contour-color: #00cc14;
-    --bg-image: repeating-linear-gradient(
-        to right,
-        #000 0,
-        #000 2px,
-        rgba(255, 255, 255, 0) 2px,
-        rgba(255, 255, 255, 0) 4px
-      ),
-      repeating-linear-gradient(
-        to bottom,
-        #000 0,
-        #000 2px,
-        rgba(255, 255, 255, 0) 2px,
-        rgba(255, 255, 255, 0) 4px
-      ),
-      linear-gradient(to bottom, #007f0c, #004306);
+    --bg-one: #000;
+    --bg-two: #007f0c;
+    --bg-three: #004306;
   }
 
   .dialog-container svg {
