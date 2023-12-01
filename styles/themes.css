@@ -23,6 +23,10 @@
   color: var(--bg-color);
 }
 
+.theme-light .save-button svg {
+  color: var(--bg-color);
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     --title-font-weight: 700;
@@ -37,6 +41,10 @@
   }
 
   .dialog-container svg {
+    color: var(--bg-color);
+  }
+
+  .save-button svg {
     color: var(--bg-color);
   }
 }
@@ -59,6 +67,10 @@
   color: var(--accent-color);
 }
 
+.theme-dark .save-button svg {
+  color: var(--accent-color);
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --title-font-weight: 785;
@@ -73,6 +85,10 @@
   }
 
   .dialog-container svg {
+    color: var(--accent-color);
+  }
+
+  .save-button svg {
     color: var(--accent-color);
   }
 }
