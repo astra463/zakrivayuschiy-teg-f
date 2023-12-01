@@ -27,7 +27,7 @@
   min-block-size: 100dvb;
   font-variation-settings: "wght" var(--main-font-weight);
   background-image: repeating-linear-gradient(
-    to right,
+    to left,
     var(--bg-one) 0 2px,
     transparent 2px 4px
   ),
